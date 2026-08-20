@@ -149,3 +149,15 @@
   addEventListener('touchstart', kick, {once:true, passive:true});
   addEventListener('click', kick, {once:true});
 })();
+
+/* night flip: dark chrome while the story section or finale is on screen */
+(function () {
+  var zones = [document.querySelector('.dark'), document.querySelector('.final')].filter(Boolean);
+  if (!zones.length || !('IntersectionObserver' in window)) return;
+  var vis = new Set();
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { e.isIntersecting ? vis.add(e.target) : vis.delete(e.target); });
+    document.documentElement.classList.toggle('night', vis.size > 0);
+  }, { rootMargin: '-15% 0px -15% 0px' });
+  zones.forEach(function (z) { io.observe(z); });
+})();

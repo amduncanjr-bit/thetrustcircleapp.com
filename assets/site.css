@@ -274,3 +274,26 @@ footer{background:var(--ink);color:rgba(237,235,230,.65);padding:56px 0 40px;fon
   .mtext .mw{color:#0E1917;transition:none}
   .wstep,.wshot{transition:none}
 }
+
+/* ── night flip: from the story section on, the site goes dark (nav follows) ── */
+.nav{transition:background .6s ease,box-shadow .6s ease}
+.nav .brand,.nav .lnk{transition:color .6s ease}
+html.night .nav{background:rgba(10,13,18,.82);box-shadow:0 8px 32px rgba(0,0,0,.5)}
+html.night .nav .brand,html.night .nav .lnk{color:#EDEBE6}
+
+/* finale as a night scene — the circle still watching */
+.final{background:radial-gradient(130% 130% at 50% -10%,#0B4740 0%,#062622 52%,#031715 100%);
+  position:relative;overflow:hidden}
+.final>*{position:relative;z-index:1}
+.pulse{position:absolute;left:50%;top:52%;width:min(760px,120vw);aspect-ratio:1;
+  transform:translate(-50%,-50%);pointer-events:none;z-index:0}
+.pulse i{position:absolute;inset:0;border-radius:50%;
+  border:1.5px solid rgba(120,214,203,.34);animation:ring 5.2s ease-out infinite}
+.pulse i:nth-child(2){animation-delay:1.7s}
+.pulse i:nth-child(3){animation-delay:3.4s}
+.pulse b{position:absolute;left:50%;top:50%;width:9px;height:9px;border-radius:50%;
+  transform:translate(-50%,-50%);background:#7AD6CB;
+  box-shadow:0 0 18px 4px rgba(122,214,203,.55);animation:beacon 2.6s ease-in-out infinite}
+@keyframes ring{0%{transform:scale(.18);opacity:0}10%{opacity:.85}100%{transform:scale(1);opacity:0}}
+@keyframes beacon{0%,100%{opacity:.75}50%{opacity:1}}
+@media (prefers-reduced-motion: reduce){.pulse i,.pulse b{animation:none;opacity:.25}}

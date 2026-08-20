@@ -209,3 +209,19 @@ footer{background:var(--ink);color:rgba(237,235,230,.65);padding:56px 0 40px;fon
   .rv,.kin .w>i{opacity:1;transform:none}
   .hero-phone{transform:translateY(34px)}
 }
+
+/* ── mobile nav: icon-only brand, tight pill ── */
+@media(max-width:520px){
+  .nav{gap:4px;padding:6px 6px 6px 10px}
+  .nav .brand{font-size:0;gap:0;margin-right:0}
+  .nav .brand img{width:28px;height:28px}
+  .nav .cta{padding:9px 14px}
+}
+/* ── blog index ── */
+.bloglist{list-style:none;padding:0}
+.bloglist li{border-bottom:1px solid rgba(16,19,26,.1);padding:22px 0}
+.bloglist a{display:block}
+.bloglist .bdate{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--field);font-weight:700}
+.bloglist h2{font-size:clamp(20px,2.4vw,28px);margin:6px 0 6px;transition:color .3s}
+.bloglist a:hover h2{color:var(--field)}
+.bloglist p{color:var(--ink-soft);font-size:15px;margin:0}

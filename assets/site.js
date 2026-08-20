@@ -87,3 +87,65 @@
     }, { passive: true });
   }
 })();
+
+/* ── manifesto: split words, fill by scroll progress ── */
+(function(){
+  var mt = document.getElementById('mtext');
+  if(!mt) return;
+  var words = mt.textContent.trim().split(/\s+/);
+  mt.innerHTML = words.map(function(w){ return '<span class="mw">'+w+'</span>'; }).join(' ');
+  var spans = mt.querySelectorAll('.mw');
+  var sec = mt.closest('.manifesto');
+  var mq = window.matchMedia('(min-width:900px)');
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(rm) { spans.forEach(function(s){ s.classList.add('lit'); }); return; }
+  function tick(){
+    if(!mq.matches) return;
+    var r = sec.getBoundingClientRect();
+    var total = r.height - innerHeight;
+    var p = Math.min(1, Math.max(0, -r.top / (total || 1)));
+    var lit = Math.round(p * spans.length * 1.15);
+    spans.forEach(function(s, i){ s.classList.toggle('lit', i < lit); });
+  }
+  addEventListener('scroll', tick, {passive:true});
+  addEventListener('resize', tick);
+  tick();
+})();
+
+/* ── walkthrough: scroll drives active step + phone shot ── */
+(function(){
+  var walk = document.getElementById('walk');
+  if(!walk) return;
+  var steps = walk.querySelectorAll('.wstep');
+  var shots = walk.querySelectorAll('.wshot');
+  var dots  = walk.querySelectorAll('.wdot');
+  var mq = window.matchMedia('(min-width:900px)');
+  var cur = 0;
+  function setActive(i){
+    if(i === cur) return;
+    cur = i;
+    steps.forEach(function(s, j){ s.classList.toggle('act', j === i); });
+    shots.forEach(function(s, j){ s.classList.toggle('on', j === i); });
+    dots.forEach(function(d, j){ d.classList.toggle('on', j === i); });
+  }
+  function tick(){
+    if(!mq.matches) return;
+    var r = walk.getBoundingClientRect();
+    var total = r.height - innerHeight;
+    var p = Math.min(0.999, Math.max(0, -r.top / (total || 1)));
+    setActive(Math.floor(p * steps.length));
+  }
+  addEventListener('scroll', tick, {passive:true});
+  addEventListener('resize', tick);
+  tick();
+})();
+
+/* ── hero reel: ensure muted autoplay actually starts ── */
+(function(){
+  var v = document.querySelector('.hero-phone video');
+  if(!v) return;
+  var kick = function(){ v.play().catch(function(){}); };
+  kick();
+  addEventListener('touchstart', kick, {once:true, passive:true});
+  addEventListener('click', kick, {once:true});
+})();

@@ -225,3 +225,52 @@ footer{background:var(--ink);color:rgba(237,235,230,.65);padding:56px 0 40px;fon
 .bloglist h2{font-size:clamp(20px,2.4vw,28px);margin:6px 0 6px;transition:color .3s}
 .bloglist a:hover h2{color:var(--field)}
 .bloglist p{color:var(--ink-soft);font-size:15px;margin:0}
+
+/* ── hero phone: reel video ── */
+.hero-phone video{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
+
+/* ── manifesto: pinned statement, words fill on scroll ── */
+.manifesto{height:240vh;background:var(--teal-wash)}
+.mpin{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.mtext{font-family:'Playfair Display',Georgia,serif;font-weight:800;letter-spacing:-.01em;
+  font-size:clamp(30px,4.6vw,58px);line-height:1.22;max-width:20ch;text-align:center;
+  padding:0 var(--gut,24px)}
+.mtext .mw{color:rgba(16,19,26,.15);transition:color .18s linear}
+.mtext .mw.lit{color:var(--ink)}
+
+/* ── walkthrough: pinned split, steps cycle ── */
+.walk{height:480vh;position:relative}
+.wpin{position:sticky;top:0;height:100svh;display:flex;align-items:center;overflow:hidden}
+.wgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,80px);align-items:center;width:100%}
+.wcopy{position:relative;min-height:340px}
+.wstep{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
+  opacity:0;transform:translateY(26px);pointer-events:none;
+  transition:opacity .5s ease,transform .5s ease}
+.wstep.act{opacity:1;transform:none;pointer-events:auto}
+.wstep .mshot{display:none}
+.wmedia{display:flex;flex-direction:column;align-items:center;gap:18px}
+.wphone{position:relative;aspect-ratio:1290/2796;width:min(100%,300px)}
+.wshot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;
+  opacity:0;transform:scale(1.03);transition:opacity .5s ease,transform .6s ease}
+.wshot.on{opacity:1;transform:none}
+.wdots{display:flex;gap:8px}
+.wdot{width:8px;height:8px;border-radius:50%;background:rgba(16,19,26,.18);transition:all .3s}
+.wdot.on{background:var(--field);transform:scale(1.35)}
+
+@media(max-width:899px){
+  .manifesto{height:auto;padding:80px 0}
+  .mpin{position:static;height:auto}
+  .mtext .mw{color:var(--ink)}
+  .walk{height:auto}
+  .wpin{position:static;height:auto;display:block;padding:20px 0 40px}
+  .wgrid{display:block}
+  .wmedia{display:none}
+  .wcopy{min-height:0}
+  .wstep{position:static;opacity:1;transform:none;pointer-events:auto;margin-bottom:56px}
+  .wstep .mshot{display:block;margin-top:22px}
+  .wstep .mshot .phone{width:min(78%,280px);margin:0 auto}
+}
+@media(prefers-reduced-motion:reduce){
+  .mtext .mw{color:#0E1917;transition:none}
+  .wstep,.wshot{transition:none}
+}

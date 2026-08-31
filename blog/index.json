@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "consent-makes-location-sharing-work",
+   "title": "Why consent is the thing that makes location sharing actually work",
+   "dek": "Sharing your location with someone feels very different depending on whether you chose it.",
+   "date": "August 31, 2026"
+  },
+  {
    "slug": "solo-travel-check-in-rhythm",
    "title": "Solo travel safety: building a check-in rhythm your people can rely on",
    "dek": "A simple, consistent check-in habit keeps the people who care about you calm and ready to help if something actually goes wrong.",

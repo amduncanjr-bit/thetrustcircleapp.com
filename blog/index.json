@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "traffic-stop-hands-and-documents",
+   "title": "Traffic stops: keeping your hands visible while your documents do the talking",
+   "dek": "A little preparation before you're pulled over can make the whole encounter calmer for everyone in the car.",
+   "date": "September 4, 2026"
+  },
+  {
    "slug": "consent-makes-location-sharing-work",
    "title": "Why consent is the thing that makes location sharing actually work",
    "dek": "Sharing your location with someone feels very different depending on whether you chose it.",

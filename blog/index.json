@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "rideshare-curb-to-car",
+   "title": "Rideshare safety: the two minutes between the curb and the car",
+   "dek": "The moments before you get in are when most rideshare incidents begin, and a few deliberate habits can change that.",
+   "date": "September 11, 2026"
+  },
+  {
    "slug": "group-chat-is-not-a-safety-plan",
    "title": "The group chat is not a safety plan — what a real one looks like",
    "dek": "Sending a quick message to friends before you go out feels like safety, but it usually isn't.",

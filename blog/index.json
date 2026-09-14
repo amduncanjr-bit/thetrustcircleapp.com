@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "what-end-to-end-encryption-means",
+   "title": "What 'end-to-end encrypted' actually means for your safety data",
+   "dek": "The phrase gets thrown around constantly, so here is what it actually means and why it matters when the data in question is your live location.",
+   "date": "September 14, 2026"
+  },
+  {
    "slug": "rideshare-curb-to-car",
    "title": "Rideshare safety: the two minutes between the curb and the car",
    "dek": "The moments before you get in are when most rideshare incidents begin, and a few deliberate habits can change that.",

@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "first-semester-safety-net",
+   "title": "First semester away from home: independence and a safety net at the same time",
+   "dek": "Moving out on your own is a genuine achievement, and a little planning now means you can enjoy it without the people who love you losing sleep.",
+   "date": "September 16, 2026"
+  },
+  {
    "slug": "what-end-to-end-encryption-means",
    "title": "What 'end-to-end encrypted' actually means for your safety data",
    "dek": "The phrase gets thrown around constantly, so here is what it actually means and why it matters when the data in question is your live location.",

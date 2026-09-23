@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "crash-minutes-and-detection",
+   "title": "The minutes after a crash, and what changes when your phone already knows",
+   "dek": "Knowing what to do after a collision is one thing — having help triggered before you can even reach for your phone is another.",
+   "date": "September 23, 2026"
+  },
+  {
    "slug": "stop-blaming-the-dead-phone",
    "title": "Stop blaming the dead phone",
    "dek": "Your phone's battery and signal aren't excuses — they're variables you can actually manage.",

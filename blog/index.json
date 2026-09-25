@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "campus-safety-before-move-in",
+   "title": "The campus safety conversation every parent and student should have before move-in",
+   "dek": "One conversation before the first goodbye can make the whole year feel a little less like a leap into the unknown.",
+   "date": "September 25, 2026"
+  },
+  {
    "slug": "crash-minutes-and-detection",
    "title": "The minutes after a crash, and what changes when your phone already knows",
    "dek": "Knowing what to do after a collision is one thing — having help triggered before you can even reach for your phone is another.",

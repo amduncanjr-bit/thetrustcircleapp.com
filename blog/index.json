@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "what-encrypted-actually-means",
+   "title": "What 'encrypted' actually means for your safety data",
+   "dek": "The word gets thrown around constantly, but understanding what it does and doesn't promise helps you make smarter choices about the apps you trust with sensitive information.",
+   "date": "October 14, 2026"
+  },
+  {
    "slug": "rideshare-curb-to-car-qu2a",
    "title": "Rideshare safety: the two minutes between the curb and the car",
    "dek": "The moments before you get in are when most rideshare problems start, and a few habits can change them completely.",

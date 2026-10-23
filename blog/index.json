@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "after-a-crash-first-minutes",
+   "title": "What to do in the minutes after a car crash — and how crash detection changes them",
+   "dek": "The moments right after a collision are disorienting, so knowing what to do before you're in one makes a real difference.",
+   "date": "October 23, 2026"
+  },
+  {
    "slug": "battery-signal-dead-phone",
    "title": "Your phone isn't as fragile as you think",
    "dek": "A few small habits can keep your phone useful when you need it most — and most \"dead phone\" emergencies were preventable.",

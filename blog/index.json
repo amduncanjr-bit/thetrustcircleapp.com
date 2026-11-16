@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "end-to-end-encryption-explained",
+   "title": "What 'end-to-end encrypted' actually means for your safety data",
+   "dek": "The phrase is everywhere, but understanding what it promises — and what it doesn't — helps you make smarter choices about the apps you trust with sensitive information.",
+   "date": "November 16, 2026"
+  },
+  {
    "slug": "rideshare-curb-to-car-zb5b",
    "title": "Rideshare safety: the two minutes between the curb and the car",
    "dek": "The moments before you get in are when most of the risk actually lives.",

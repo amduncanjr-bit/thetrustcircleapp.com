@@ -1,6 +1,12 @@
 {
  "articles": [
   {
+   "slug": "signal-battery-backup-habits",
+   "title": "The phone that stays ready when it matters",
+   "dek": "A dead battery or a dropped signal is rarely a surprise — and with the right habits in place, neither one has to become an emergency.",
+   "date": "November 25, 2026"
+  },
+  {
    "slug": "tell-more-than-one-person-dt40",
    "title": "The case for telling more than one person where you are",
    "dek": "One person knowing your plans is a start, but a single point of failure is still a failure.",
